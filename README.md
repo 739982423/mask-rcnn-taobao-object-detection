@@ -1,14 +1,25 @@
 # mask-rcnn-taobao-object-detection
-根目录下的`my_test.py`为训练文件，`demo.py`为推理文件  
-数据集已经存好，放在`Live_dataset`目录下，包含了训练集和测试集（这里用的测试集为训练集的子集）
 
-**使用my_test.py进行训练:**  
-```python my_test.py train --dataset=D:\python\Mask_RCNN\Mask_RCNN\Live_dataset\image --weights=coco```  
-这里的`--dataset=`需要修改为本地训练图片的位置，就是这个库的`Live_dataset\image`
+`my_test.py` in the root directory is used for model training, while `demo.py` is used for inference.
 
-**使用demo.py进行推理:**  
-```python demo.py```  
-  
-**效果如图所示:**  
-![](https://github.com/739982423/Mask_RCNN_taobaoDetection/blob/master/Live_dataset/example.png)  
-![](https://github.com/739982423/Mask_RCNN_taobaoDetection/blob/master/Live_dataset/example1.png)
+The dataset is included in the `Live_dataset` directory, which contains both the training and test sets. Note that the test set used in this project is a subset of the training set.
+
+**Training with `my_test.py`:**
+
+```bash
+python my_test.py train --dataset=D:\python\Mask_RCNN\Mask_RCNN\Live_dataset\image --weights=coco
+````
+
+The `--dataset=` argument should be modified to the local path of the training images, specifically the `Live_dataset\image` directory in this repository.
+
+**Inference with `demo.py`:**
+
+```bash
+python demo.py
+```
+
+**Example results:**
+
+![](https://github.com/739982423/mask-rcnn-taobao-object-detection/blob/master/Live_dataset/example.png)
+
+![](https://github.com/739982423/mask-rcnn-taobao-object-detection/blob/master/Live_dataset/example1.png)
