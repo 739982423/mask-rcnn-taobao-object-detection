@@ -1,4 +1,4 @@
-# Mask R-CNN for TaoBao Object Detection
+# mask-rcnn-taobao-object-detection
 根目录下的`my_test.py`为训练文件，`demo.py`为推理文件  
 数据集已经存好，放在`Live_dataset`目录下，包含了训练集和测试集（这里用的测试集为训练集的子集）
 
